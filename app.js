@@ -22,7 +22,7 @@ function createGif(response){
 }
 
 async function getGiphyInfo(string) {
-    const response = await axios.get('http://api.giphy.com/v1/gifs/search', {params: {q: string, api_key: 'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym'}});
+    const response = await axios.get('https://api.giphy.com/v1/gifs/search', {params: {q: string, api_key: 'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym'}});
     
     createGif(response.data);
 }
